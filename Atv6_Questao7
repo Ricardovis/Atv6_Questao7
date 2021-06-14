@@ -1,0 +1,23 @@
+programa {
+	funcao inicio() {
+		//7. Faça um programa que peça ao usuário uma nota, entre zero e dez. Mostre uma
+        //mensagem caso o valor seja inválido e continue pedindo até que o usuário informe
+        //um valor válido. 
+        
+        real num
+        escreva("Digite um número de 0 á 10, por favor, se for números quebrados, utilize ponto no lugar da vírgula: ")
+        leia(num)
+        limpa()
+        enquanto(num<0 ou num>10){
+            
+            escreva("Número inválido, digite novamente: ")
+            leia(num)
+            limpa()
+        }
+        
+        se(num>=0 e num <= 10){
+            
+            escreva("Número válido, obrigado!")
+        }
+	}
+}
